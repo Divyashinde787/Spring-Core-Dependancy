@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+	
+	<beans>
+	<bean id="p" class="org.objhub.Player">
+	<property name="name" value="ramayan"/>
+		<property name="id" value="1"/>
+		<property name="sal" value="34500"/>	
+	</bean>
+	
+	<bean id="t" class="org.objhub.Team">
+	<property name="player" ref="p"/>
+	</bean>
+	</beans>
